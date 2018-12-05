@@ -1,0 +1,78 @@
+git:
+
+
+1.牛逼大神都在用
+
+2.完整的版本控制功能，解决多人协作的问题
+
+3.提高开发率
+
+4.git是球，GitHub是球场
+
+
+面向用户{初级与中级开发}
+
+
+git config --global user.name '黄双'
+
+git config --global user.email 'hs183@qq.com'
+
+ 
+git config list //查看是否配置成功
+
+
+初始化版本库：
+- git init
+
+添加文件到版本库
+- git add
+- git commit
+
+查看仓库状态
+- git status
+
+把隐藏和不隐藏你给的都查出来
+ls -a
+
+当前在什么目录
+pwd
+
+管道追加
+echo “git repo2” >> test.txt
+
+展示当前文件的内容：
+cat test.txt 
+
+git add test.txt
+
+git commt -m ""
+
+
+Git工作流
+
+回到上一个版本
+git reset HEAD bas_demo.txt
+
+工作区弄干净
+gitcheckout -- bas_demo.txt
+
+清空本地仓库文件
+·git rm bas_demo.txt
+
+清空暂存区
+·git commit -m "写提交备注"
+
+
+创建SSH Key
+ssh-keygen -t rsa -C "hs183@qq.com"
+
+本地仓库和远程GitHub仓库是否通了
+ssh -T git@github.com
+
+添加远程仓库
+
+·git remote add origin git@github.com:tylerdemo/demo4lgit
+
+·git pull origin master --allow-unrelated-histories
+
+·git push -u origin master
